@@ -32,3 +32,40 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Articles
+
+Read article for Gh-Pages and The Rest for Smarts contracts
+
+add constants/index.js and do the changes
+change pages/index.js with ours.
+
+for tailwind css
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+change the lines on tailwind.config.js with
+
+/** @type {import('tailwindcss').Config} \*/
+module.exports = {
+content: [
+"./pages/**/_.{js,ts,jsx,tsx}",
+"./components/\*\*/_.{js,ts,jsx,tsx}",
+],
+theme: {
+extend: {},
+},
+plugins: [],
+}
+
+add those lines to top of page at styles/global.css
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Copy and paste index.js
+you can clean styles/home.module.css cuz we dont use it
+
+commit changes
