@@ -69,3 +69,5 @@ Copy and paste index.js
 you can clean styles/home.module.css cuz we dont use it
 
 commit changes
+
+and finally your dApp ready
